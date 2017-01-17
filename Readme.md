@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Olezhka Sych](https://up.htmlacademy.ru/htmlcss/16/user/329619).
-* Наставник: `Неизвестно`.
+* Наставник: Лиза Позднякова (https://htmlacademy.ru/profile/lizzy).
 
 ---
 
