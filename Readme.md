@@ -41,3 +41,20 @@ _`.editorconfig`, `.gitignore`, `Contributing.md`, `Readme.md`._
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github.svg"></a>
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Базовый HTML и CSS](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
+
+
+
+<!-- <div class="feature-item">
+  <b>Любим математику как никто другой</b>
+  <p>Никакого креатива, только математические формулы для расчета
+    идеальных пропорций.</p>
+  <a href="#" class="info">УЗНАТЬ БОЛЬШЕ</a>
+  <label><input type="radio" name="slider2"></label>
+</div>
+<div class="feature-item">
+  <b>Только ночь, только хардкор</b>
+  <p>Работать днём, как все? Мы против этого. Ближе к полуночи
+    работа только начинается.</p>
+    <a href="#" class="info">УЗНАТЬ БОЛЬШЕ</a>
+    <label><input type="radio" name="slider3"></label>
+</div> -->
