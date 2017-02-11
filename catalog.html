@@ -52,24 +52,103 @@
               <div class="toggle-max toggle"></div>
             </div>
             <div class="price-control">
-              <label class="price">От
+              <label class="price price-min">От
               <input name="price-min" id="price-min" type="text" value="0">
               </label>
-              <label class="price">До
+              <label class="price price-max">До
               <input name="price-max" id="price-max" type="text" value="15000">
               </label>
             </div>
+            <h2>Сетка:</h2>
+            <div class="form-radio">
+              <input class="none-display radio-input" type="radio" name="radio1" id="radio1" checked>
+              <input class="none-display radio-input" type="radio" name="radio2" id="radio2">
+              <input class="none-display radio-input" type="radio" name="radio3" id="radio3">
+              <label class="radio1" for="radio1">Адаптивная</label>
+              <label class="radio2" for="radio2">Фиксированная</label>
+              <label class="radio3" for="radio3">Резиновая</label>
+            </div>
+            <h2>Особенности:</h2>
+            <div class="form-checkbox">
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox1" id="checkbox1" checked>
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox2" id="checkbox2">
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox3" id="checkbox3" checked>
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox4" id="checkbox4">
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox5" id="checkbox5">
+              <label class="text-checkbox checkbox1" for="checkbox1">Слайдер</label>
+              <label class="text-checkbox checkbox2" for="checkbox2">Блок преимуществ</label>
+              <label class="text-checkbox checkbox3" for="checkbox3">Новости</label>
+              <label class="text-checkbox checkbox4" for="checkbox4">Галерея</label>
+              <label class="text-checkbox checkbox5" for="checkbox5">Корзина</label>
+            </div>
+            <button class="form-button" type="button" name="button">Показать</button>
           </form>
         </div>
         <div class="catalog-content-right">
-          <div class="catalog-content-right-text"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="controls"></div>
+          <div class="catalog-content-right-text">
+            <b>Сортировать:</b>
+            <div class="text-links">
+              <a class="link" href="#">По цене</a>
+              <a class="link" href="#">По типу</a>
+              <a class="link" href="#">По названию</a>
+              <span class="down pointer pointer-active"></span>
+              <span class="up pointer"></span>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img-sedona.png" width="360" height="576" alt="sedona">
+            <div class="item-info">
+              <b>Sedona</b>
+              <span>Информационный сайт для&nbsp;туристов</span>
+              <a class="button" href="#">9 990 руб.</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img-pink.png" width="360" height="576" alt="sedona">
+            <div class="item-info">
+              <b>Pink App</b>
+              <span>Продуктовый лендинг приложения для iOS и Android</span>
+              <a class="button" href="#">9 990 руб.</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img-barbershop.png" width="360" height="576" alt="sedona">
+            <div class="item-info">
+              <b>Barbershop</b>
+              <span>Сайт салона красоты. Для&nbsp;мужчин,&nbsp;да.</span>
+              <a class="button" href="#">9 990 руб.</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img-mishka.png" width="360" height="576" alt="sedona">
+            <div class="item-info">
+              <b>Mishka</b>
+              <span>Интернет-магазин вязаных&nbsp;игрушек</span>
+              <a class="button" href="#">9 990 руб.</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img-aplus.png" width="360" height="576" alt="sedona">
+            <div class="item-info">
+              <b>A Plus</b>
+              <span>Лендинг курсов повышения квалификации</span>
+              <a class="button" href="#">9 990 руб.</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/img-sedona.png" width="360" height="576" alt="sedona">
+            <div class="item-info">
+              <b>Кваст</b>
+              <span>Промо-сайт производителя крафтового кваса</span>
+              <a class="button" href="#">9 990 руб.</a>
+            </div>
+          </div>
+          <div class="controls">
+            <a class="number-current">1</a>
+            <a class="number" href="#">2</a>
+            <a class="number" href="#">3</a>
+            <a class="number next" href="#">Следующая</a>
+          </div>
         </div>
       </div>
     </main>
