@@ -1,4 +1,5 @@
 body {
+  position: relative;
   font-size: 16px;
   line-height: 24px;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -588,13 +589,13 @@ color: #e37376;
   position: fixed;
   z-index: 10;
   width: 760px;
-  min-height: 441px;
-  margin: -298px -480px;
+  height: 475px;
+  margin: -295px -480px;
   left: 50%;
   top: 50%;
   background: white;
-  box-shadow: 0 20px 40px 0 #595a5a;
-  padding: 70px 100px 85px;
+  box-shadow: 0 20px 55px 0 #595a5a;
+  padding: 30px 100px 85px ;
 }
 
 .write-us h2 {
@@ -604,7 +605,12 @@ color: #e37376;
 }
 
 .write-us label {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .write-us-form {
@@ -612,10 +618,60 @@ color: #e37376;
 }
 
 .write-us-form input[type="text"] {
-  width: 360px;
-  padding: 14px;
+  display: block;
+  width: 100%;
+  padding: 15px 15px 13px;
+  border-radius: 3px;
+  border: 2px solid #d7dcde;
+  text-overflow: ellipsis;
+  outline: none;
 }
 
+.name {
+  float: left;
+  width: 360px;
+  margin-bottom: 15px;
+}
+
+.name input[type="text"] {
+  width: 326px;
+}
+
+.e-mail {
+  float: right;
+  width: 360px;
+  margin-bottom: 15px;
+}
+
+.e-mail input[type="text"] {
+  width: 326px;
+}
+
+.letter {
+  clear: both;
+  width: 724px;
+  height: 87px;
+  margin-bottom: 110px;
+}
+
+.write-us-form .write-us-btn {
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 14px 45px;
+  width: 260px;
+  background: #fb565a;
+}
+
+.write-us-form .write-us-btn:hover {
+background: #e74246;
+}
+
+.write-us-form .write-us-btn:active {
+box-shadow: 0 3px #c13135 inset;
+background: #d7373b;
+color: #e37376;
+}
 
 .write-us-close {
   background: transparent;
