@@ -585,6 +585,15 @@ background: #d7373b;
 color: #e37376;
 }
 
+body .overlay {
+  position: fixed;
+  content: "";
+  width: 1000px;
+  height: 500px;
+  background: black;
+  z-index: 5;
+}
+
 .write-us {
   position: fixed;
   z-index: 10;
@@ -596,6 +605,15 @@ color: #e37376;
   background: white;
   box-shadow: 0 20px 55px 0 #595a5a;
   padding: 30px 100px 85px ;
+}
+
+body .overlay {
+  position: fixed;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fb565a;
+  opacity: 0.2;
 }
 
 .write-us h2 {
@@ -620,7 +638,7 @@ color: #e37376;
 .write-us-form input[type="text"] {
   display: block;
   width: 100%;
-  padding: 15px 15px 13px;
+  padding: 14px 15px;
   border-radius: 3px;
   border: 2px solid #d7dcde;
   text-overflow: ellipsis;
@@ -630,7 +648,7 @@ color: #e37376;
 .name {
   float: left;
   width: 360px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .name input[type="text"] {
@@ -640,7 +658,7 @@ color: #e37376;
 .e-mail {
   float: right;
   width: 360px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .e-mail input[type="text"] {
@@ -649,9 +667,44 @@ color: #e37376;
 
 .letter {
   clear: both;
-  width: 724px;
+  width: 760px;
   height: 87px;
   margin-bottom: 110px;
+}
+
+.letter b {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.letter textarea {
+  width: 726px;
+  height: 87px;
+  padding: 14px 15px;
+  border: 2px solid #d7dcde;
+  text-overflow: ellipsis;
+  outline: none;
+  border-radius: 3px;
+  outline: none;
+  overflow: auto;
+  resize: none;
+}
+
+.actions:hover {
+  border-color: #b4b9bb;
+}
+
+.actions:active {
+  border-color: #000000;
+}
+
+.none-value {
+  border-color: #e74246;
+  color: #e74246;
 }
 
 .write-us-form .write-us-btn {
@@ -842,7 +895,6 @@ color: #e37376;
   font-weight: 400;
   color: #666666;
 }
-
 
 .catalog-head {
   width: 780px;

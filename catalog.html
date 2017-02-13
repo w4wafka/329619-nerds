@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="overlay none-display"></div>
     <header class="main-header bg-header">
       <div class="main-header-layout container">
         <div class="main-header-logo">
           <a class="link-logo" href="index.html"><span class="none-display">Логотип</span>
-            <img src="img\nerds-logo.png" width="160px" height="65px" alt="logo">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="logo">
           </a>
         </div>
         <ul class="main-header-nav">
@@ -40,7 +41,7 @@
     <main class="container">
       <div class="catalog-content">
         <div class="catalog-content-left">
-          <form class="catalog-form" action="" method="get">
+          <form class="catalog-form" action="#" method="get">
             <h2>Стоимость:</h2>
             <div class="range-filter">
               <div class="range-controls">
@@ -161,7 +162,7 @@
                ул. Б. Конюшенная, д. 19/8<br>
             </p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button modal-open" href="#">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -180,23 +181,24 @@
     <div class="write-us none-display">
       <h2>Напишите нам</h2>
       <form class="write-us-form" action="#" method="post">
-        <div class="name">
+        <div class="write-us-container name">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+          <input class="actions text-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
         </div>
-        <div class="e-mail">
+        <div class="write-us-container e-mail">
           <label for="e-mail">Ваш e-mail:</label>
-          <input class="e-mail" type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
+          <input class="text-email" type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
         </div>
-        <div class="letter">
-          <label for="letter">Текст письма:</label>
-          <input class="letter" type="text" name="letter" id="letter" placeholder="В свободной форме">
-        </div>
+        <div class="write-us-container letter">
+          <b>Текст письма:</b>
+          <textarea class="text-letter" name="letter" id="letter" placeholder="В свободной форме"></textarea>
+      </div>
         <button class="button write-us-btn" type="button" name="button">Отправить</button>
       </form>
       <button class="write-us-close" type="button" title="Закрыть">
         <span class="none-display">Закрыть</span>
       </button>
     </div>
+    <script src="js/popup.js" type="text/javascript"></script>
   </body>
 </html>
