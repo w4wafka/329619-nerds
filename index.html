@@ -35,9 +35,9 @@
         </div>
       </div>
       <div class="header-slider">
-        <input class="none-display radio1" type="radio" name="slide1" id="slide1" checked>
-        <input class="none-display radio2" type="radio" name="slide2" id="slide2">
-        <input class="none-display radio3" type="radio" name="slide3" id="slide3">
+        <input class="none-display radio1" type="radio" value="1" name="slide" id="slide1" checked>
+        <input class="none-display radio2" type="radio" value="2" name="slide" id="slide2">
+        <input class="none-display radio3" type="radio" value="3" name="slide" id="slide3">
         <div class="slides">
           <div class="slide-content slide1">
             <div class="slide-text">
@@ -156,7 +156,7 @@
                ул. Б. Конюшенная, д. 19/8<br>
             </p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button modal-open" href="#">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@
         </div>
       </div>
     </footer>
-    <div class="write-us none-display">
+    <div class="write-us">
       <h2>Напишите нам</h2>
       <form class="write-us-form" action="#" method="post">
         <div class="write-us-container name">
@@ -184,8 +184,8 @@
           <input class="actions" type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
         </div>
         <div class="write-us-container letter">
-          <b>Текст письма:</b>
-          <textarea class="actions" name="letter" placeholder="В свободной форме"></textarea>
+          <label for="letter">Ваш текст:</label>
+          <textarea class="actions" name="letter" id="letter" placeholder="В свободной форме"></textarea>
       </div>
         <button class="button write-us-btn" type="button" name="button">Отправить</button>
       </form>

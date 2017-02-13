@@ -10,20 +10,20 @@ var form = document.querySelector(".write-us-form");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
-  modal.classList.remove("none-display");
-  overlay.classList.remove("none-display");
+  modal.classList.add("modal-shown");
+  overlay.classList.add("modal-shown");
 });
 
 close.addEventListener("click", function(event) {
   event.preventDefault();
-  modal.classList.add("none-display");
-  overlay.classList.add("none-display");
+  modal.classList.remove("modal-shown");
+  overlay.classList.remove("modal-shown");
 });
 
 overlay.addEventListener("click", function(event) {
   event.preventDefault();
-  modal.classList.add("none-display");
-  overlay.classList.add("none-display");
+  modal.classList.remove("modal-shown");
+  overlay.classList.remove("modal-shown");
 });
 
 form.addEventListener("submit", function(event) {

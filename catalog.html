@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="overlay none-display"></div>
+    <div class="overlay"></div>
     <header class="main-header bg-header">
       <div class="main-header-layout container">
         <div class="main-header-logo">
@@ -62,20 +62,20 @@
             </div>
             <h2>Сетка:</h2>
             <div class="form-radio">
-              <input class="none-display radio-input" type="radio" name="radio1" id="radio1" checked>
-              <input class="none-display radio-input" type="radio" name="radio2" id="radio2">
-              <input class="none-display radio-input" type="radio" name="radio3" id="radio3">
+              <input class="none-display radio-input" type="radio" name="radio" id="radio1" checked>
+              <input class="none-display radio-input" type="radio" name="radio" id="radio2">
+              <input class="none-display radio-input" type="radio" name="radio" id="radio3">
               <label class="radio1" for="radio1">Адаптивная</label>
               <label class="radio2" for="radio2">Фиксированная</label>
               <label class="radio3" for="radio3">Резиновая</label>
             </div>
             <h2>Особенности:</h2>
             <div class="form-checkbox">
-              <input class="none-display checkbox-input" type="checkbox" name="checkbox1" id="checkbox1" checked>
-              <input class="none-display checkbox-input" type="checkbox" name="checkbox2" id="checkbox2">
-              <input class="none-display checkbox-input" type="checkbox" name="checkbox3" id="checkbox3" checked>
-              <input class="none-display checkbox-input" type="checkbox" name="checkbox4" id="checkbox4">
-              <input class="none-display checkbox-input" type="checkbox" name="checkbox5" id="checkbox5">
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox" id="checkbox1" checked>
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox" id="checkbox2">
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox" id="checkbox3" checked>
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox" id="checkbox4">
+              <input class="none-display checkbox-input" type="checkbox" name="checkbox" id="checkbox5">
               <label class="text-checkbox checkbox1" for="checkbox1">Слайдер</label>
               <label class="text-checkbox checkbox2" for="checkbox2">Блок преимуществ</label>
               <label class="text-checkbox checkbox3" for="checkbox3">Новости</label>
@@ -178,20 +178,20 @@
         </div>
       </div>
     </footer>
-    <div class="write-us none-display">
+    <div class="write-us">
       <h2>Напишите нам</h2>
       <form class="write-us-form" action="#" method="post">
         <div class="write-us-container name">
           <label for="name">Ваше имя:</label>
-          <input class="actions text-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+          <input class="actions text-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
         </div>
         <div class="write-us-container e-mail">
           <label for="e-mail">Ваш e-mail:</label>
-          <input class="text-email" type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
+          <input class="actions text-email" type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required>
         </div>
         <div class="write-us-container letter">
           <b>Текст письма:</b>
-          <textarea class="text-letter" name="letter" id="letter" placeholder="В свободной форме"></textarea>
+          <textarea class="actions text-letter" name="letter" id="letter" placeholder="В свободной форме" required></textarea>
       </div>
         <button class="button write-us-btn" type="button" name="button">Отправить</button>
       </form>
