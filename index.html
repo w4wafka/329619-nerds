@@ -177,15 +177,15 @@
       <form class="write-us-form" action="#" method="post">
         <div class="write-us-container name">
           <label for="name">Ваше имя:</label>
-          <input class="actions" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+          <input class="actions text-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
         </div>
         <div class="write-us-container e-mail">
           <label for="e-mail">Ваш e-mail:</label>
-          <input class="actions" type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
+          <input class="actions text-email" type="text" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required>
         </div>
         <div class="write-us-container letter">
-          <label for="letter">Ваш текст:</label>
-          <textarea class="actions" name="letter" id="letter" placeholder="В свободной форме"></textarea>
+          <b>Текст письма:</b>
+          <textarea class="actions text-letter" name="letter" id="letter" placeholder="В свободной форме" required></textarea>
       </div>
         <button class="button write-us-btn" type="button" name="button">Отправить</button>
       </form>
