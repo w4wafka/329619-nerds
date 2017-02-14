@@ -496,25 +496,64 @@ body {
 .friend {
   position: relative;
   display: inline-block;
-  width: 260px;
-  height: auto;
-  opacity: 0.2;
-  margin-top: 46px;
+  width: 240px;
+  height: 160px;
+  padding: 10px;
   margin-bottom: auto;
   vertical-align: middle;
   text-align: center;
   margin-right: 35px;
 }
 
+.friend::before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  width: 2px;
+  height: 52px;
+  margin: -26px -1px;
+  background: #eeeeee;
+  top: 50%;
+  opacity: 1;
+}
+
+.friend:nth-child(4n)::before {
+  opacity: 0; 
+}
+
+.friend-container {
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0.2;
+  width: 240px;
+  height: 100%;
+}
+
+.img1 {
+  background: url("../img/htmlacad.png") no-repeat center;
+}
+
+.img2 {
+  background: url("../img/borodinsk.png") no-repeat center;
+}
+
+.img3 {
+  background: url("../img/pink.png") no-repeat center;
+}
+
+.img4 {
+  background: url("../img/mishka.png") no-repeat center;
+}
+
 .friend:nth-child(4n) {
   margin-right: 0;
 }
 
-.friend:hover {
+.friend .friend-container:hover {
   opacity: 1;
 }
 
-.friend:active {
+.friend .friend-container:active {
   opacity: 0.1;
 }
 
@@ -587,15 +626,6 @@ background: #d7373b;
 color: #e37376;
 }
 
-body .overlay {
-  position: fixed;
-  content: "";
-  width: 1000px;
-  height: 500px;
-  background: black;
-  z-index: 5;
-}
-
 .write-us {
   display: none;
   position: fixed;
@@ -607,10 +637,10 @@ body .overlay {
   top: 50%;
   background: white;
   box-shadow: 0 20px 55px 0 #595a5a;
-  padding: 30px 100px 85px ;
+  padding: 30px 100px 85px;
 }
 
-body .overlay {
+.overlay {
   display: none;
   position: absolute;
   content: "";
@@ -621,9 +651,22 @@ body .overlay {
   opacity: 0.4;
 }
 
-body .modal-shown {
+.modal-shown {
   display: block;
   animation: bounce 0.6s;
+}
+
+.overlay-shown {
+  display: block;
+  animation: whisper 0.8s;
+}
+
+.js-animation-modal {
+  animation: return 0.6s;
+}
+
+.js-animation-overlay {
+  animation: whispereturn 0.8s;
 }
 
 .write-us h2 {
@@ -645,7 +688,7 @@ body .modal-shown {
   min-height: 350px;
 }
 
-.write-us-form input[type="text"] {
+.actions {
   display: block;
   width: 100%;
   padding: 14px 15px;
@@ -691,7 +734,7 @@ body .modal-shown {
   cursor: pointer;
 }
 
-.letter textarea {
+.text-letter {
   width: 726px;
   height: 87px;
   padding: 14px 15px;
@@ -704,19 +747,32 @@ body .modal-shown {
   resize: none;
 }
 
-.write-us-container .actions:hover {
+.actions:hover {
   border-color: #b4b9bb;
 }
 
-.write-us-container .actions:focus {
+.actions:focus {
   border-color: #000000;
 }
 
-.write-us-container .actions:focus:invalid {
+.none-value {
   border-color: #e74246;
   color: #e74246;
 }
 
+.none-value:hover {
+  border-color: #e74246;
+  color: #e74246;
+}
+
+.none-value:focus {
+  border-color: #e74246;
+  color: #e74246;
+}
+
+.error {
+  animation: shake 0.6s;
+}
 .write-us-form .write-us-btn {
   border: none;
   outline: none;
@@ -1474,6 +1530,28 @@ color: #e37376;
 @keyframes bounce {
   0% {transform: translateY(-2000px)}
   70% {transform: translateY(30px)}
-  90% {transform: translateY(10px)}
+  90% {transform: translateY(-10px)}
   100% {transform: translateY(0px)}
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0px)}
+  20%, 60% {transform: translateX(20px)}
+  40%, 80% {transform: translateX(-20px)}
+}
+
+@keyframes return {
+  0% {transform: translateY(0px)}
+  70% {transform: translateY(30px)}
+  100% {transform: translateY(-2000px);}
+}
+
+@keyframes whisper {
+  0% {opacity: 0}
+  100% {opacity: 0.4}
+}
+
+@@keyframes whispereturn {
+  0% {opacity: 0.4}
+  100% {opacity: 0}
 }
