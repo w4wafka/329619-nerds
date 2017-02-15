@@ -1592,7 +1592,7 @@ color: #e37376;
   box-shadow: 0 3px #bfbfbf inset;
 }
 
--webkit-keyframes bounce {
+@-webkit-keyframes bounce {
   0% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
   70% {-webkit-transform: translateY(30px);transform: translateY(30px);}
   90% {-webkit-transform: translateY(-10px);transform: translateY(-10px);}
@@ -1606,7 +1606,7 @@ color: #e37376;
   100% {-webkit-transform: translateY(0px);transform: translateY(0px);}
 }
 
--webkit-keyframes shake {
+@-webkit-keyframes shake {
   0%, 100% {-webkit-transform: translateX(0px);transform: translateX(0px);}
   20%, 60% {-webkit-transform: translateX(20px);transform: translateX(20px);}
   40%, 80% {-webkit-transform: translateX(-20px);transform: translateX(-20px);}
@@ -1618,7 +1618,7 @@ color: #e37376;
   40%, 80% {-webkit-transform: translateX(-20px);transform: translateX(-20px);}
 }
 
--webkit-keyframes return {
+@-webkit-keyframes return {
   0% {-webkit-transform: translateY(0px);transform: translateY(0px);}
   70% {-webkit-transform: translateY(30px);transform: translateY(30px);}
   100% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
@@ -1630,7 +1630,7 @@ color: #e37376;
   100% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
 }
 
--webkit-keyframes whisper {
+@-webkit-keyframes whisper {
   0% {opacity: 0;}
   100% {opacity: 0.4;}
 }
