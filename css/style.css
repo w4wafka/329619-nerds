@@ -1439,7 +1439,7 @@ color: #e37376;
   content: "";
   width: 360px;
   height: 227px;
-  bottom: -2px;
+  bottom: -3px;
   background: #eeeeee;
   text-align: center;
   opacity: 0;
@@ -1593,7 +1593,7 @@ color: #e37376;
 }
 
 -webkit-keyframes bounce {
-  0% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px)жmatrix();}
+  0% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
   70% {-webkit-transform: translateY(30px);transform: translateY(30px);}
   90% {-webkit-transform: translateY(-10px);transform: translateY(-10px);}
   100% {-webkit-transform: translateY(0px);transform: translateY(0px);}
