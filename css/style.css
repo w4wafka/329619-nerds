@@ -1,3 +1,7 @@
+html {
+  width: 100%;
+}
+
 body {
   position: relative;
   font-size: 16px;
@@ -28,15 +32,25 @@ body {
   display: none;
 }
 
+.pointer-none {
+  pointer-events: none;
+}
+
 .bg-header {
   margin: 0 auto;
   background: #eeeeee;
 }
 
 .main-header-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .main-header-logo {
@@ -277,13 +291,20 @@ body {
 }
 
 .index-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .index-choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 1100px;
   min-height: 350px;
   margin-top: 80px;
@@ -374,8 +395,12 @@ body {
 }
 
 .index-about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 1160px;
   border-top: 3px solid #eeeeee;
 }
@@ -518,7 +543,7 @@ body {
 }
 
 .friend:nth-child(4n)::before {
-  opacity: 0; 
+  opacity: 0;
 }
 
 .friend-container {
@@ -529,19 +554,19 @@ body {
   height: 100%;
 }
 
-.img1 {
+.htmlacad {
   background: url("../img/htmlacad.png") no-repeat center;
 }
 
-.img2 {
+.borodinski {
   background: url("../img/borodinsk.png") no-repeat center;
 }
 
-.img3 {
+.pink {
   background: url("../img/pink.png") no-repeat center;
 }
 
-.img4 {
+.mishka {
   background: url("../img/mishka.png") no-repeat center;
 }
 
@@ -572,8 +597,12 @@ body {
 }
 
 .main-footer-adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 55px 0;
 }
 
@@ -653,20 +682,24 @@ color: #e37376;
 
 .modal-shown {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .overlay-shown {
   display: block;
-  animation: whisper 0.8s;
+  -webkit-animation: whisper 0.8s;
+          animation: whisper 0.8s;
 }
 
 .js-animation-modal {
-  animation: return 0.6s;
+  -webkit-animation: return 0.6s;
+          animation: return 0.6s;
 }
 
 .js-animation-overlay {
-  animation: whispereturn 0.8s;
+  -webkit-animation: whispereturn 0.8s;
+          animation: whispereturn 0.8s;
 }
 
 .write-us h2 {
@@ -771,7 +804,8 @@ color: #e37376;
 }
 
 .error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 .write-us-form .write-us-btn {
   border: none;
@@ -819,11 +853,13 @@ color: #e37376;
 }
 
 .write-us-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .write-us-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .write-us-close:hover::before,
@@ -837,16 +873,24 @@ color: #e37376;
 }
 
 .main-footer-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-width: 260px;
 }
 
@@ -977,8 +1021,12 @@ color: #e37376;
 }
 
 .catalog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 20px;
   margin-bottom: 0;
 }
@@ -1235,35 +1283,43 @@ color: #e37376;
   opacity: 0.1;
 }
 
-.catalog-content-left .form-button {
+.catalog-content-left a {
   display: inline-block;
   border: 0;
   background: #eeeeee;
-  width: 260px;
+  width: 200px;
   padding: 15px 30px;
   border-radius: 5px;
+  color: #000000;
+  text-decoration: none;
   outline: none;
   cursor: pointer;
   font-size: 16px;
   text-transform: uppercase;
+  text-align: center;
   line-height: 18px;
   font-weight: 500;
 }
 
-.catalog-content-left .form-button:hover {
+.catalog-content-left a:hover {
   background: #dfdfdf;
 }
 
-.catalog-content-left .form-button:active {
+.catalog-content-left a:active {
   background: #d5d5d5;
   color: #959595;
   box-shadow: 0 3px #bfbfbf inset;
 }
 
 .catalog-content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 760px;
   padding: 0;
 }
@@ -1426,15 +1482,25 @@ color: #e37376;
   border: 1px solid #e5e5e5;
 }
 
-.item-info b {
+.item-info a {
   width: 200px;
   margin-top: 25px;
   text-align: center;
   display: inline-block;
+  color: inherit;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.item-name:hover {
+  opacity: 0.7;
+}
+
+.item-name:active {
+  opacity: 0.3;
 }
 
 .item-info span {
@@ -1449,12 +1515,15 @@ color: #e37376;
   text-align: center;
 }
 
-.item-info a {
+.item-info .button {
   display: inline-block;
   width: 160px;
   min-height: 30px;
   padding: 0 20px;
   padding-top: 12px;
+  margin-top: 0;
+  font-weight: 500;
+  color: #ffffff;
   cursor: pointer;
   padding-bottom: 8px;
   background: #fb565a;
@@ -1462,11 +1531,11 @@ color: #e37376;
   text-align: center;
 }
 
-.item-info a:hover {
+.item-info .button:hover {
 background: #e74246;
 }
 
-.item-info a:active {
+.item-info .button:active {
 box-shadow: 0 3px #c13135 inset;
 background: #d7373b;
 color: #e37376;
@@ -1527,23 +1596,47 @@ color: #e37376;
   box-shadow: 0 3px #bfbfbf inset;
 }
 
+@-webkit-keyframes bounce {
+  0% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px)}
+  70% {-webkit-transform: translateY(30px);transform: translateY(30px)}
+  90% {-webkit-transform: translateY(-10px);transform: translateY(-10px)}
+  100% {-webkit-transform: translateY(0px);transform: translateY(0px)}
+}
+
 @keyframes bounce {
-  0% {transform: translateY(-2000px)}
-  70% {transform: translateY(30px)}
-  90% {transform: translateY(-10px)}
-  100% {transform: translateY(0px)}
+  0% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px)}
+  70% {-webkit-transform: translateY(30px);transform: translateY(30px)}
+  90% {-webkit-transform: translateY(-10px);transform: translateY(-10px)}
+  100% {-webkit-transform: translateY(0px);transform: translateY(0px)}
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {-webkit-transform: translateX(0px);transform: translateX(0px)}
+  20%, 60% {-webkit-transform: translateX(20px);transform: translateX(20px)}
+  40%, 80% {-webkit-transform: translateX(-20px);transform: translateX(-20px)}
 }
 
 @keyframes shake {
-  0%, 100% {transform: translateX(0px)}
-  20%, 60% {transform: translateX(20px)}
-  40%, 80% {transform: translateX(-20px)}
+  0%, 100% {-webkit-transform: translateX(0px);transform: translateX(0px)}
+  20%, 60% {-webkit-transform: translateX(20px);transform: translateX(20px)}
+  40%, 80% {-webkit-transform: translateX(-20px);transform: translateX(-20px)}
+}
+
+@-webkit-keyframes return {
+  0% {-webkit-transform: translateY(0px);transform: translateY(0px)}
+  70% {-webkit-transform: translateY(30px);transform: translateY(30px)}
+  100% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
 }
 
 @keyframes return {
-  0% {transform: translateY(0px)}
-  70% {transform: translateY(30px)}
-  100% {transform: translateY(-2000px);}
+  0% {-webkit-transform: translateY(0px);transform: translateY(0px)}
+  70% {-webkit-transform: translateY(30px);transform: translateY(30px)}
+  100% {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
+}
+
+@-webkit-keyframes whisper {
+  0% {opacity: 0}
+  100% {opacity: 0.4}
 }
 
 @keyframes whisper {

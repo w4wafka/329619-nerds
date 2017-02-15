@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body>
     <div class="overlay"></div>
@@ -82,14 +82,14 @@
               <label class="text-checkbox checkbox4" for="checkbox4">Галерея</label>
               <label class="text-checkbox checkbox5" for="checkbox5">Корзина</label>
             </div>
-            <button class="form-button" type="button" name="button">Показать</button>
+            <a href="#" class="form-button" name="button">Показать</a>
           </form>
         </div>
         <div class="catalog-content-right">
           <div class="catalog-content-right-text">
             <b>Сортировать:</b>
             <div class="text-links">
-              <a class="link" href="#">По цене</a>
+              <a class="link pointer-active" href="#">По цене</a>
               <a class="link" href="#">По типу</a>
               <a class="link" href="#">По названию</a>
               <span class="down pointer pointer-active"></span>
@@ -99,7 +99,7 @@
           <div class="item">
             <img src="img/img-sedona.png" width="360" height="576" alt="sedona">
             <div class="item-info">
-              <b>Sedona</b>
+              <a class="item-name" href="#">Sedona</a>
               <span>Информационный сайт для&nbsp;туристов</span>
               <a class="button" href="#">9 990 руб.</a>
             </div>
@@ -107,7 +107,7 @@
           <div class="item">
             <img src="img/img-pink.png" width="360" height="576" alt="sedona">
             <div class="item-info">
-              <b>Pink App</b>
+              <a class="item-name" href="#">Pink App</a>
               <span>Продуктовый лендинг приложения для iOS и Android</span>
               <a class="button" href="#">9 990 руб.</a>
             </div>
@@ -115,7 +115,7 @@
           <div class="item">
             <img src="img/img-barbershop.png" width="360" height="576" alt="sedona">
             <div class="item-info">
-              <b>Barbershop</b>
+              <a class="item-name" href="#">Barbershop</a>
               <span>Сайт салона красоты. Для&nbsp;мужчин,&nbsp;да.</span>
               <a class="button" href="#">9 990 руб.</a>
             </div>
@@ -123,7 +123,7 @@
           <div class="item">
             <img src="img/img-mishka.png" width="360" height="576" alt="sedona">
             <div class="item-info">
-              <b>Mishka</b>
+              <a class="item-name" href="#">Mishka</a>
               <span>Интернет-магазин вязаных&nbsp;игрушек</span>
               <a class="button" href="#">9 990 руб.</a>
             </div>
@@ -131,7 +131,7 @@
           <div class="item">
             <img src="img/img-aplus.png" width="360" height="576" alt="sedona">
             <div class="item-info">
-              <b>A Plus</b>
+              <a class="item-name" href="#">A Plus</a>
               <span>Лендинг курсов повышения квалификации</span>
               <a class="button" href="#">9 990 руб.</a>
             </div>
@@ -139,7 +139,7 @@
           <div class="item">
             <img src="img/img-sedona.png" width="360" height="576" alt="sedona">
             <div class="item-info">
-              <b>Кваст</b>
+              <a class="item-name" href="#">Кваст</a>
               <span>Промо-сайт производителя крафтового кваса</span>
               <a class="button" href="#">9 990 руб.</a>
             </div>
@@ -199,6 +199,6 @@
         <span class="none-display">Закрыть</span>
       </button>
     </div>
-    <script src="js/popup.js" type="text/javascript"></script>
+    <script src="js/popup-min.js" type="text/javascript"></script>
   </body>
 </html>
