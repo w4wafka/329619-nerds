@@ -63,7 +63,33 @@ window.addEventListener("keydown", function(event) {
       }
     }
   }
-})
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 13) {
+    if (!name_form.value) {
+      event.preventDefault();
+      name_form.classList.add("none-value");
+      modal.classList.add("error");
+    } else { if (name_form.classList.contains("none-value")) {
+          name_form.classList.remove("none-value");
+        }}
+    if (!eMail_form.value) {
+      eMail_form.classList.add("none-value");
+      event.preventDefault();
+      modal.classList.add("error");
+    } else { if (eMail_form.classList.contains("none-value")) {
+          eMail_form.classList.remove("none-value");
+        }}
+    if (!letter_form.value) {
+      letter_form.classList.add("none-value");
+      event.preventDefault();
+      modal.classList.add("error");
+    } else { if (letter_form.classList.contains("none-value")) {
+          letter_form.classList.remove("none-value");
+        }}
+  }
+});
 
 form_modal.addEventListener("submit", function(event) {
   if (!name_form.value) {
@@ -72,19 +98,19 @@ form_modal.addEventListener("submit", function(event) {
     modal.classList.add("error");
   } else { if (name_form.classList.contains("none-value")) {
         name_form.classList.remove("none-value");
-      }};
+    }};
   if (!eMail_form.value) {
     eMail_form.classList.add("none-value");
     event.preventDefault();
     modal.classList.add("error");
   } else { if (eMail_form.classList.contains("none-value")) {
       eMail_form.classList.remove("none-value");
-  }}
+    }}
   if (!letter_form.value) {
     letter_form.classList.add("none-value");
     event.preventDefault();
     modal.classList.add("error");
   } else { if (letter_form.classList.contains("none-value")) {
     letter_form.classList.remove("none-value");
-  }}
+    }}
 });
