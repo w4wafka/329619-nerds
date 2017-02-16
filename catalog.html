@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
   <body>
     <div class="overlay"></div>
@@ -82,7 +82,7 @@
               <label class="text-checkbox checkbox4" for="checkbox4">Галерея</label>
               <label class="text-checkbox checkbox5" for="checkbox5">Корзина</label>
             </div>
-            <a href="#" class="form-button" name="button">Показать</a>
+            <button type="submit" class="form-button" name="button">Показать</button>
           </form>
         </div>
         <div class="catalog-content-right">
@@ -155,15 +155,16 @@
     </main>
     <footer class="main-footer">
       <div class="map">
-        <div class="main-footer-adress container">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=p4vtfn6ZozkR8uoSy2cuzgGG4iRTwsjA&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+        <div class="map-container">
           <div class="adress">
-            <b>Nёrds Design Studio</b>
-            <p>191186, Санкт-Петербург,<br>
-               ул. Б. Конюшенная, д. 19/8<br>
-            </p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <a class="button modal-open" href="#">Напишите нам</a>
-          </div>
+          <b>Nёrds Design Studio</b>
+          <p>191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д. 19/8<br>
+          </p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="button modal-open" href="#">Напишите нам</a>
+        </div>
         </div>
       </div>
       <div class="main-footer-layout">
@@ -183,17 +184,17 @@
       <form class="write-us-form" action="#" method="post">
         <div class="write-us-container name">
           <label for="name">Ваше имя:</label>
-          <input class="actions text-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста" required>
+          <input class="actions text-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
         </div>
         <div class="write-us-container e-mail">
           <label for="e-mail">Ваш e-mail:</label>
-          <input class="actions text-email" type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" required>
+          <input class="actions text-email" type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа">
         </div>
         <div class="write-us-container letter">
           <b>Текст письма:</b>
-          <textarea class="actions text-letter" name="letter" id="letter" placeholder="В свободной форме" required></textarea>
+          <textarea class="actions text-letter" name="letter" id="letter" placeholder="В свободной форме"></textarea>
       </div>
-        <button class="button write-us-btn" type="button" name="button">Отправить</button>
+        <button class="button write-us-btn" type="submit" name="button">Отправить</button>
       </form>
       <button class="write-us-close" type="button" title="Закрыть">
         <span class="none-display">Закрыть</span>
